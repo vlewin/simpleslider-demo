@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @post.title
+%p
+  %b Content:
+  = @post.content
+
+%br
+
+= link_to 'Back', posts_path, :class => 'back'

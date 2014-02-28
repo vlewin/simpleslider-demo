@@ -1,0 +1,57 @@
+%ul#breadcrumb
+  / %li
+  /   %a.back
+  /     %i.fa.fa-lg.fa-arrow-circle-left
+  /     Posts
+
+/ #simple-slider
+/   %ul
+/     %li.animated
+/       %h3 Listing posts
+
+/       %br
+
+/       %table.table
+/         %tr
+/           %th Title
+/           %th Content
+/           %th
+
+/         - @posts.each do |post|
+/           %tr
+/             %td= post.title
+/             %td= post.content
+/             %td{ :style => 'text-align:right;'}= link_to 'Show', post, :class => 'show', :data => {:id => post.id, :target => "##{post.id}", :title => post.title }, :remote => true
+
+/       %br
+/     %li.animated
+/       = image_tag 'spinner.gif'
+/       Please wait ...
+
+
+
+
+
+#simpleslider
+  %ul
+    %li.animated
+      %h3 SimpleSlider JQuery
+
+      %br
+
+      %table.table
+        %tr
+          %th Title
+          %th Content
+          %th
+
+        - @posts.each do |post|
+          %tr
+            %td= post.title
+            %td= post.content
+            %td{ :style => 'text-align:right;'}= link_to 'Show', post, :class => 'slink', :data => {:id => post.id, :target => "##{post.id}", :title => post.title, 'no-turbolink' => 'true' } #, :remote => true
+
+      %br
+    %li.animated
+      = image_tag 'spinner.gif'
+      Please wait ...
