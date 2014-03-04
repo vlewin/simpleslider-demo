@@ -1,4 +1,4 @@
 simpleslider-demo
 =================
 
-Rails demo application for SimpleSlider JQuery plugin
+[JQuery SimpleSlider] (https://github.com/vlewin/jquery.simpleslider) demo rails application
