@@ -1,6 +1,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require simpleslider
 //= require_tree .
 
 $("#simpleslider").simpleslider({

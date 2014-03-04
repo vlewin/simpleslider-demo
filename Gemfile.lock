@@ -86,6 +86,8 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.1.1)
     ref (1.0.5)
+    simpleslider (1.0.0)
+      jquery-rails
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -123,6 +125,7 @@ DEPENDENCIES
   jquery-rails
   less-rails
   rails (= 4.0.2)
+  simpleslider
   sqlite3
   therubyracer
   turbolinks

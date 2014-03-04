@@ -12,4 +12,6 @@ gem 'haml-rails'
 gem 'less-rails'
 gem 'bootstrap-on-rails'
 gem 'font-awesome-less'
+
+gem 'simpleslider'
 # gem 'debugger', group: [:development, :test]
