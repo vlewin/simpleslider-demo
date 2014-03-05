@@ -17,7 +17,11 @@ Feature: SimpleSlider basic functionality.
   @javascript
   Scenario: Access the details page directly
     When I visit '/posts/#1'
-    Then I should be on the 'details' page
+    # Then I should be on the 'details' page
+    Then I should see a breadcrumb
+    And I should see 'Title 1'
+    And I should see 'Back' link
+    And I should not see 'Index page'
 
   @javascript
   Scenario: Stay on the page after browser reload
@@ -25,7 +29,11 @@ Feature: SimpleSlider basic functionality.
     Then I should be on the 'details' page
 
     Then I reload the page
-    And I should be on the 'details' page
+    # And I should be on the 'details' page
+    Then I should see a breadcrumb
+    And I should see 'Title 1'
+    And I should see 'Back' link
+    And I should not see 'Index page'
 
   @javascript
   Scenario: Navigate with browser forward/back buttons
