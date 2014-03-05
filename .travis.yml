@@ -8,6 +8,7 @@
 #script: bundle exec rake travis
 
 language: ruby
+cache: bundler
 rvm:
   - 2.0.0
 env:
