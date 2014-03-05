@@ -9,10 +9,12 @@ require 'capybara/poltergeist'
 
 puts "**** TRAVIS ENV #{ENV['TRAVIS']}"
 puts "**** POLTERGEIST ENV #{ENV['POLTERGEIST']}"
-Capybara.app_host =  'localhost:5000' if ENV['TRAVIS']
+
+Capybara.javascript_driver = :selenium
+# Capybara.app_host =  'localhost:5000' if ENV['TRAVIS']
 
 Capybara.configure do |config|
-  config.javascript_driver = :poltergeist
+  # config.javascript_driver =: poltergeist
   config.default_wait_time = 5
   config.match = :one
   config.exact_options = true
