@@ -7,7 +7,8 @@
 require 'cucumber/rails'
 require 'capybara/poltergeist'
 
-
+puts "**** TRAVIS ENV #{ENV['TRAVIS']}"
+puts "**** POLTERGEIST ENV #{ENV['POLTERGEIST']}"
 Capybara.app_host =  'localhost:5000' if ENV['TRAVIS']
 
 Capybara.configure do |config|
