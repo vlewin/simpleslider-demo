@@ -4,5 +4,4 @@ rvm:
 before_script:
   - RAILS_ENV=test bundle exec rake db:create
 script:
-  - 'phantomjs testrunner.js'
   - 'bundle exec rake cucumber'
