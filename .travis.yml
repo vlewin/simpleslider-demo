@@ -1,9 +1,8 @@
 language: ruby
+rvm:
+  - 2.0.0
 before_script:
   - RAILS_ENV=test bundle exec rake db:create
-  # - "bundle exec rails server -p 5000 &"
-  # - "sleep 5" # Wait for the server to start up"
-script: phantomjs testrunner.js
-script: bundle exec rake cucumber
-
-
+script:
+  - 'phantomjs testrunner.js'
+  - 'bundle exec rake cucumber'
