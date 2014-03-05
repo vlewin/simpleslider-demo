@@ -7,6 +7,9 @@
 require 'cucumber/rails'
 require 'capybara/poltergeist'
 
+
+Capybara.app_host =  'localhost:5000' if ENV['TRAVIS']
+
 Capybara.configure do |config|
   config.javascript_driver = :poltergeist
   config.default_wait_time = 5

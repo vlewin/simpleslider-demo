@@ -24,7 +24,6 @@ Feature: SimpleSlider basic functionality.
 
     Then I reload the page
     And I should be on the 'details' page
-    And Show current page url
 
   Scenario: Navigate with browser forward/back buttons
     When I visit '/'
