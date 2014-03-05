@@ -14,9 +14,9 @@ end
 
 # Capybara.javascript_driver = :selenium
 
-# Capybara.register_driver :poltergeist do |app|
-#  Capybara::Poltergeist::Driver.new(app, {phantomjs: "/usr/local/bin/phantomjs", js_errors: true, timeout: 5, debug: true})
-# end
+Capybara.register_driver :poltergeist do |app|
+  Capybara::Poltergeist::Driver.new(app, {phantomjs: "/usr/local/bin/phantomjs", js_errors: true, timeout: 5, debug: true})
+end
 
 ActionController::Base.allow_rescue = false
 
