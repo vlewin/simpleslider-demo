@@ -12,6 +12,16 @@ gem 'haml-rails'
 gem 'less-rails'
 gem 'bootstrap-on-rails'
 gem 'font-awesome-less'
-
 gem 'simpleslider'
-# gem 'debugger', group: [:development, :test]
+
+group :development, :test do
+  gem 'debugger'
+end
+
+group :test do
+  # gem 'selenium-webdriver'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  gem 'poltergeist'
+  gem 'launchy'
+end
