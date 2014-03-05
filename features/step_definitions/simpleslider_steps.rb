@@ -60,9 +60,11 @@ end
 
 Then /^I (should|should not) see a breadcrumb$/ do |condition|
   if condition == 'should'
-    assert page.has_css?('#breadcrumb li')
-    assert find('#breadcrumb').visible?
-    assert_equal(2, find("#breadcrumb").all("li").count)
+    assert page.has_css?('#breadcrumb', :visible => true)
+    assert page.has_css?('#breadcrumb li', :count => 2)
+    # assert page.has_css?('#breadcrumb li')
+    # assert find('#breadcrumb').visible?
+    # assert_equal(2, find("#breadcrumb").all("li").count)
   else
     assert page.has_css?('#breadcrumb', :visible => false)
     assert page.has_no_css?('#breadcrumb li', :visible => false)
