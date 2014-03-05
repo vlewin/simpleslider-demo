@@ -7,8 +7,6 @@
 require 'cucumber/rails'
 require 'capybara/poltergeist'
 
-puts "**** TRAVIS ENV #{ENV['TRAVIS']}"
-puts "**** POLTERGEIST ENV #{ENV['POLTERGEIST']}"
 
 Capybara.javascript_driver = :selenium
 # Capybara.app_host =  'localhost:5000' if ENV['TRAVIS']
@@ -22,6 +20,8 @@ Capybara.configure do |config|
   config.visible_text_only = true
   config.default_selector = :css
 end
+
+
 
 # Capybara.javascript_driver = :selenium
 
