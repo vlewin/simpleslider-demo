@@ -1,5 +1,5 @@
-simpleslider-demo
-=================
+# simpleslider-demo [![Build Status](https://secure.travis-ci.org/vlewin/simpleslider-demo.png?branch=master)](https://travis-ci.org/vlewin/simpleslider-demo)
+
 
 [JQuery SimpleSlider] (https://github.com/vlewin/jquery.simpleslider) demo rails application
 
