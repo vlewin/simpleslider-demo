@@ -62,9 +62,6 @@ Then /^I (should|should not) see a breadcrumb$/ do |condition|
   if condition == 'should'
     assert page.has_css?('#breadcrumb', :visible => true)
     assert page.has_css?('#breadcrumb li', :count => 2)
-    # assert page.has_css?('#breadcrumb li')
-    # assert find('#breadcrumb').visible?
-    # assert_equal(2, find("#breadcrumb").all("li").count)
   else
     assert page.has_css?('#breadcrumb', :visible => false)
     assert page.has_no_css?('#breadcrumb li', :visible => false)
@@ -81,7 +78,6 @@ Then /^I should be on the '(index|details)' page$/ do |location|
     step "I should see a breadcrumb"
     step "I should see 'Title 1'"
     step "I should see 'Back' link"
-    step "I should not see 'Index page'"
   end
 end
 
